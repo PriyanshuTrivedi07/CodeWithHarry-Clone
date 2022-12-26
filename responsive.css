@@ -1,0 +1,180 @@
+@media only screen and (max-width: 1024px) {
+
+    .container {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    .header {
+        height: 4.4rem;
+    }
+
+    .logo {
+        left: 1rem;
+    }
+
+
+    .header ul {
+        display: none;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sub-section-1 {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-img {
+        display: none;
+    }
+
+    .btn-2 {
+        line-height: 1rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+
+
+    .card-container {
+        padding-inline: 1rem;
+    }
+
+    .cards {
+        max-height: 34rem;
+    }
+
+    .contentpara {
+        min-height: 24rem;
+    }
+
+    .startwatching {
+        padding-top: 0px;
+        padding-bottom: 1rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        max-width: 640px;
+        margin-inline: auto;
+    }
+
+    .header ul {
+        display: flex;
+    }
+
+    .header ul li {
+        display: none;
+    }
+
+    .btn [value="Signup"] {
+        display: none;
+    }
+
+    .darkmode {
+        position: absolute;
+        left: 10.5rem;
+    }
+    .tut-links{
+        padding: 0 0.75rem;
+    }
+
+    .tut-links ul {
+        display: none;
+    }
+
+    .welcome {
+        font-size: 2rem;
+    }
+
+    #sub-section-1 p {
+        font-size: 0.85rem !important;
+        line-height: 1.2rem;
+    }
+
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cards {
+        height: auto;
+        width: 23rem;
+        margin-block: 1rem;
+        height: initial;
+    }
+
+    .contentpara {
+        min-height: initial;
+    }
+
+    .startwatching {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    #navbar {
+        width: 100vw;
+    }
+
+
+
+
+    .card-container {
+        padding-inline: 2.5rem;
+
+    }
+
+    .cards {
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .footer-content {
+        padding-block: 2rem;
+        flex-direction: column;
+    }
+    .footer-logo{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo span{
+        line-height: 0.5rem;
+    }
+
+    .copyright {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright p {
+        border-left: none;
+        line-height: 1.2rem;
+    }
+}
