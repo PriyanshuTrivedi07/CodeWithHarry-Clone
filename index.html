@@ -20,12 +20,14 @@
     <div class="main-navbar sticky">
         <nav id="navbar">
             <div class="header">
-
                 <div class="logo">
-                    <a href="">CodeWithHarry</a>
+                    <a href="/index.html">CodeWithHarry</a>
                 </div>
-
                 <ul>
+                    <div class="dropdown" id="dropdown-link">
+                        <div class="text">Menu</div>
+                        <div class="drop-icon"><ion-icon name="caret-down-outline"></ion-icon></div>
+                    </div>
                     <li><a class="hover-underline-animation" href="#">Home</a></li>
                     <li><a class="hover-underline-animation" href="#">Courses</a></li>
                     <li><a class="hover-underline-animation" href="#">Tutorial</a></li>
@@ -44,11 +46,10 @@
                         <input type="submit" value="Signup">
                     </div>
                 </ul>
-
             </div>
             <hr>
-            <!-- tutorial-links -->
 
+            <!-- tutorial-links -->
             <div class="tut-links">
                 <div class="icon">
                     <a href="index.html"><ion-icon name="home"></ion-icon></a>
@@ -68,8 +69,32 @@
                     <a href=""><ion-icon name="search"></ion-icon></a>
                 </div>
             </div>
-
         </nav>
+    </div>
+
+    <div class="dropdown-menu ">
+        <ul class="dropdown-list" id="dropdown">
+            <li class="dropdown-list-item"><a href="#">Home</a></li>
+            <li class="dropdown-list-item"><a href="#">Courses</a></li>
+            <li class="dropdown-list-item sub-drop-menu" id="sub-dropdown"><a href="#">Tutorial<ion-icon
+                        name="caret-down-outline"></ion-icon></a></li>
+            <ul class="sub-dropdown-list">
+                <li><a class="" href="#">html</a></li>
+                <li><a class="" href="#">css</a></li>
+                <li><a class="" href="#">js</a></li>
+                <li><a class="" href="#">c</a></li>
+                <li><a class="" href="#">c++</a></li>
+                <li><a class="" href="#">java</a></li>
+                <li><a class="" href="#">python</a></li>
+                <li><a class="" href="#">php</a></li>
+                <li><a class="" href="#">React js</a></li>
+            </ul>
+            <li class="dropdown-list-item"><a href="#">Blog</a></li>
+            <li class="dropdown-list-item"><a href="#">Notes</a></li>
+            <li class="dropdown-list-item"><a href="#">Contact</a></li>
+            <li class="dropdown-list-item"><a href="#">My Gear</a></li>
+            <li class="dropdown-list-item" style="padding-bottom: 1rem;"><a href="#">Work With Us</a></li>
+        </ul>
     </div>
     <!-- NAVBAR CONTAINER ENDS HERE -->
 
@@ -104,71 +129,73 @@
             <h2 class="main-heading">Recommended Courses</h2>
             <div class="card-container">
                 <!-- CARD-1 STARTS FROM HERE  -->
-                <div class="cards" id="card-1">
-
-                    <div id="tailwind" class="thumbnail">
-                        <img src="https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fpython-100-days-of-code-1%2F7wnove7K-ZQ-HD.jpg&w=384&q=75"
-                            alt="">
+                <div class="card-wrapper">
+                    <div class="cards" id="card-1">
+                        <div id="card1-thumbnail" class="thumbnail">
+                            <img src="https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fpython-100-days-of-code-1%2F7wnove7K-ZQ-HD.jpg&w=384&q=75"
+                                alt="python course thumbnail">
+                        </div>
+                        <div class="contentpara">
+                            <span class="s-h">Free Course</span>
+                            <div class="lng-hdig">Python Tutorials - 100 Days of Code</div>
+                            <p>Python is one of the most demanded programming languages in the job market. Surprisingly,
+                                it
+                                is equally easy to learn and master Python. Let's commit our 100 days of code to python!
+                            </p>
+                        </div>
+                        <div class="startwatching">
+                            <span>Start Watching</span>
+                        </div>
                     </div>
-                    <div class="contentpara">
-                        <span class="s-h">Free Course</span>
-                        <div class="lng-hdig">Python Tutorials - 100 Days of Code</div>
-                        <p>Python is one of the most demanded programming languages in the job market. Surprisingly, it
-                            is equally easy to learn and master Python. Let's commit our 100 days of code to python!</p>
-                    </div>
-                    <div class="startwatching">
-                        <span>Start Watching</span>
-                    </div>
-
                 </div>
                 <!-- CARD-1 ENDS HERE  -->
 
 
                 <!-- CARD-2 STARTS FROM HERE  -->
-                <div class="cards" id="card-2">
+                <div class="card-wrapper">
+                    <div class="cards" id="card-2">
+                        <div id="card2-thumbnail" class="thumbnail">
+                            <img src="https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fultimate-js-tutorial-hindi-1%2FJS-Thumb.jpg&w=384&q=75"
+                                alt="javascript thumbnail">
+                        </div>
+                        <div class="contentpara">
+                            <span class="s-h">Free Course</span>
+                            <div class="lng-hdig">Ultimate JavaScript Course</div>
+                            <p>This latest JavaScript course comes with premium curriculum that covers everything from
+                                basics to advance. On top of that, you will get my handwritten notes of JS for
+                                completely
+                                free. What are you waiting for? Just Enroll Buddy
 
-                    <div id="next" class="thumbnail">
-                        <img src="https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fultimate-js-tutorial-hindi-1%2FJS-Thumb.jpg&w=384&q=75"
-                            alt="">
-                    </div>
-                    <div class="contentpara">
-                        <span class="s-h">Free Course</span>
-                        <div class="lng-hdig">Ultimate JavaScript Course</div>
-                        <p>This latest JavaScript course comes with premium curriculum that covers everything from
-                            basics to advance. On top of that, you will get my handwritten notes of JS for completely
-                            free. What are you waiting for? Just Enroll Buddy
-
-                        </p>
-                    </div>
-                    <div class="startwatching">
-                        <span>Start Watching</span>
-
+                            </p>
+                        </div>
+                        <div class="startwatching">
+                            <span>Start Watching</span>
+                        </div>
                     </div>
                 </div>
                 <!-- CARD-2 ENDS HERE  -->
 
                 <!-- CARD-3 STARTS FROM HERE  -->
-                <div class="cards" id="card-3">
+                <div class="card-wrapper">
+                    <div class="cards" id="card-3">
 
-                    <div id="react" class="thumbnail">
-                        <img src="course_thumbnails/react.jpeg" alt="">
-                    </div>
-                    <div class="contentpara">
-                        <span class="s-h">Free Course</span>
-                        <div class="lng-hdig">React Js Tutorials For Beginners</div>
-                        <p>React is a free and open-source front-end JavaScript library. This series will cover
-                            React
-                            from starting to the end. We will learn react from the ground up!</p>
-                    </div>
-                    <div class="startwatching">
-                        <span>Start Watching</span>
-                    </div>
+                        <div id="card3-thumbnail" class="thumbnail">
+                            <img src="course_thumbnails/react.jpeg" alt="react thumbnail">
+                        </div>
+                        <div class="contentpara">
+                            <span class="s-h">Free Course</span>
+                            <div class="lng-hdig">React Js Tutorials For Beginners</div>
+                            <p>React is a free and open-source front-end JavaScript library. This series will cover
+                                React
+                                from starting to the end. We will learn react from the ground up!</p>
+                        </div>
+                        <div class="startwatching">
+                            <span>Start Watching</span>
+                        </div>
 
+                    </div>
                 </div>
                 <!-- CARD-3 ENDS HERE  -->
-
-
-
             </div>
         </div>
         <!-- SECTION-2 ENDS HERE  -->
@@ -233,6 +260,24 @@
 
     </div>
 
+    <!-- SCRIPT -->
+    <!-- <script defer>
+        let dropdown = document.getElementById('dropdown');
+        let dropdownLink = document.getElementById('dropdown-link');
+        const subDropdown = document.getElementById('sub-dropdown');
+        const subDropdownList = document.querySelector(".sub-dropdown-list");
+        dropdownLink.addEventListener('click', () => {
+            const icon = document.querySelector('.drop-icon ion-icon');
+            icon.classList.toggle('rotate-dropicon');
+            dropdown.classList.toggle('open');
+        });
+        subDropdown.addEventListener('click', () => {
+            const icon = document.querySelector('#sub-dropdown ion-icon');
+            icon.classList.toggle('rotate-dropicon');
+            subDropdownList.classList.toggle('open');
+        });
+    </script> -->
+    <script src="script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

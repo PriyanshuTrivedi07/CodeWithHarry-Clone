@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1280px) {
+    .contentpara {
+        height: 16rem;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
 
     .container {
@@ -12,6 +18,7 @@
     .logo {
         left: 1rem;
     }
+
 
 
     .header ul {
@@ -46,18 +53,11 @@
         padding-inline: 1rem;
     }
 
-    .cards {
-        max-height: 34rem;
-    }
-
     .contentpara {
-        min-height: 24rem;
+        height: 18rem;
     }
 
-    .startwatching {
-        padding-top: 0px;
-        padding-bottom: 1rem;
-    }
+
 
 
 
@@ -69,6 +69,7 @@
         max-width: 640px;
         margin-inline: auto;
     }
+
 
     .header ul {
         display: flex;
@@ -82,16 +83,129 @@
         display: none;
     }
 
-    .darkmode {
+    .dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(126 34 206);
         position: absolute;
-        left: 10.5rem;
+        left: 11rem;
+        margin-inline: 0.3rem;
+        cursor: pointer;
+        user-select: none;
     }
-    .tut-links{
+
+    .text {
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .drop-icon {
+        margin-top: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .drop-icon ion-icon {
+        transition: all 0.4s cubic-bezier(0.39, 0.58, 0.57, 1);
+    }
+
+    .rotate-dropicon {
+        transform: rotate(180deg);
+    }
+
+    .darkmode {
+        margin-inline: 0.6rem;
+        position: absolute;
+        left: 14.5rem;
+    }
+
+    .tut-links {
         padding: 0 0.75rem;
     }
 
     .tut-links ul {
         display: none;
+    }
+
+    .dropdown-menu {
+        z-index: 4;
+        position: sticky;
+        top: 7.47rem;
+        /* border: 2px solid red; */
+        background-color: rgb(243 232 255);
+        display: flex;
+        text-align: center;
+        width: 100%;
+        margin-top: 0.25rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    }
+
+    .dropdown-list {
+        width: 100%;
+        max-height: 0px;
+        opacity: 0.2;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.39, 0.58, 0.57, 1);
+    }
+
+    .dropdown-list.open {
+        max-height: 100vh !important;
+        opacity: 1;
+    }
+
+    .dropdown-list-item {
+        padding-block: 0.5rem;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+    }
+
+    .dropdown-list-item:hover {
+        background-color: #dfc3ff;
+    }
+
+    .dropdown-list-item a {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(168 85 247);
+        font-weight: 700;
+    }
+
+    .sub-dropdown-list {
+        /* margin-block: 0.5rem; */
+        max-height: 0px;
+        opacity: 0.2;
+        transition: all 0.4s cubic-bezier(0.39, 0.58, 0.57, 1);
+        overflow: hidden;
+    }
+
+    .sub-dropdown-list.open {
+        max-height: 100vh !important;
+        opacity: 1;
+    }
+
+    #sub-dropdown ion-icon {
+        transition: all 0.4s cubic-bezier(0.39, 0.58, 0.57, 1);
+    }
+
+    .sub-dropdown-list li {
+        border-top: 1px solid rgb(243 232 255);
+        border-bottom: 1px solid rgb(243 232 255);
+        background-color: rgb(233 213 255);
+        padding-block: 0.25rem;
+        border-radius: 5px;
+        transition: all 0.2s ease;
+    }
+
+    .sub-dropdown-list li:hover {
+        background-color: #ddbdff;
+    }
+
+    .sub-dropdown-list li a {
+        color: rgb(168 85 247);
+        text-transform: uppercase;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
     }
 
     .welcome {
@@ -111,20 +225,18 @@
 
     }
 
+    .card-wrapper {
+        width: auto;
+    }
+
     .cards {
         height: auto;
-        width: 23rem;
-        margin-block: 1rem;
         height: initial;
     }
 
     .contentpara {
-        min-height: initial;
-    }
-
-    .startwatching {
-        padding-top: 1rem;
-        padding-bottom: 0.5rem;
+        height: 100%;
+        padding-block: 0rem;
     }
 
     .testimonial-container {
@@ -143,9 +255,6 @@
         width: 100vw;
     }
 
-
-
-
     .card-container {
         padding-inline: 2.5rem;
 
@@ -154,17 +263,21 @@
     .cards {
         width: 100%;
         margin-inline: auto;
+        max-height: 100%;
     }
 
     .footer-content {
-        padding-block: 2rem;
+        /* padding-block: 2rem; */
         flex-direction: column;
+        height: 100%;
     }
-    .footer-logo{
+
+    .footer-logo {
         justify-content: center;
         align-items: center;
     }
-    .footer-logo span{
+
+    .footer-logo span {
         line-height: 0.5rem;
     }
 
